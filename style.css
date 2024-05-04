@@ -1,0 +1,230 @@
+body{
+  background-color:#fffaff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+.text-bg {
+  padding: 10px;
+  border: 1px;
+  border-radius: 20px;
+  background-color: #0a2463;
+  color: white;
+}
+/* end of navbar */
+
+/* About me section */
+.home-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+  color: #0a2463;
+}
+/* End of About me section */
+
+
+/* Skill section */
+#skill{
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+.bg-skill {
+  padding: 10px;
+  border: 1px;
+  border-radius: 20px;
+  background-color: #d8315b;
+  color: white;
+}
+
+.card{
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card .card body{
+  color: blue;
+}
+
+.allskill{
+  display: flex;
+  justify-content: center;
+}
+.circle-wrap {
+  display: grid;
+  grid-template-columns: repeat(1, 160px);
+  grid-gap: 80px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+  width: 150px;
+  height: 150px;
+  background: #d9d7da;
+  border-radius: 50%;
+}
+
+
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3,
+.circle-wrap .circle .fill-4,
+.circle-wrap .circle .fill-5{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .inside-circle {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 120px;
+  text-align: center;
+  margin-top: 13px;
+  margin-left: 13px;
+  color: black;
+  position: absolute;
+  z-index: 100;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+/* color animation */
+/* HTML bar */
+.mask .fill-1 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #d8315b;
+}
+
+.mask.full-1,
+.circle .fill-1 {
+  animation: fill-1 ease-in-out 3s;
+  transform: rotate(90deg);
+}
+
+@keyframes fill-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+/* CSS bar */
+
+.mask .fill-2 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #d8315b;
+}
+
+.mask.full-2,
+.circle .fill-2 {
+  animation: fill-2 ease-in-out 3s;
+  transform: rotate(90deg);
+}
+
+@keyframes fill-2{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+/* JavaScript bar */
+.mask .fill-3 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #d8315b;
+}
+
+.mask.full-3,
+.circle .fill-3 {
+  animation: fill-3 ease-in-out 3s;
+  transform: rotate(36deg);
+}
+
+@keyframes fill-3{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(36deg);
+  }
+}
+
+/* PHP bar */
+.mask .fill-4 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #d8315b;
+}
+
+.mask.full-4,
+.circle .fill-4 {
+  animation: fill-4 ease-in-out 3s;
+  transform: rotate(36deg);
+}
+
+@keyframes fill-4{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(36deg);
+  }
+}
+/* MySQL skill */
+.mask .fill-5 {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #d8315b;
+}
+
+.mask.full-5,
+.circle .fill-5 {
+  animation: fill-3 ease-in-out 3s;
+  transform: rotate(117deg);
+}
+
+@keyframes fill-5{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(117deg);
+  }
+}
+
+/* End of Skill Section */
+
+
+/* Contact Section*/
+
+#contact{
+  margin-top: 175px;
+} 
+
+.btn{
+  background-color: #d8315b;
+  color: white;
+}
+
+/* End of contact section*/
+
+
+
